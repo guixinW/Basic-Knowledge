@@ -13,6 +13,7 @@ type Edges struct {
 type PriorityQueue []Edges
 
 func (pq PriorityQueue) Len() int { return len(pq) }
+
 func (pq PriorityQueue) Less(i, j int) bool {
 	return pq[i].weight < pq[j].weight
 }
